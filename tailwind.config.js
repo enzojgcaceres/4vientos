@@ -4,6 +4,15 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+
+      // colors: {
+      //   primary: "#E54C3C",
+      //   secondary: "#2825BE",
+      //   brandYellow: "#F8AE00",
+      //   brandGreen: "#01C09A",
+      //   brandBlue: "#0099FA",
+      //   brandWhite: "#FFFFFF",
+      // },
       colors: {
         primary: "#f42c37",
         secondary: "#f42c37",
@@ -18,6 +27,15 @@ export default {
           DEFAULT: "1rem",
           sm: "3rem",
         },
+      },
+      // backgroundImage: {
+      //   theme => ({
+      //     'logo-dark': "url('ruta/a/tu/logoDark.jpeg')",
+      //     'logo-light': "url('ruta/a/tu/logoLigth.jpeg')",
+      //   })
+      // },
+      darklogo: {
+        content: ["url(../../src/assets/Marucha/WhatsApp Unknown 2024-05-14 at 22.47.54/LogoDark.jpeg)"]
       },
     },
   },

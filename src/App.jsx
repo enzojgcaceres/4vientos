@@ -7,8 +7,8 @@ import Services from "./components/Services/Services";
 import Banner from "./components/Banner/Banner";
 import Partners from "./components/Partners/Partners.jsx";
 
-import headphone from "./assets/hero/headphone.png";
-import smartwatch2 from "./assets/category/smartwatch2-removebg-preview.png";
+import headphone from "./assets/Marucha/WhatsApp Unknown 2024-05-14 at 22.47.54/greyLogo.jpeg";
+import smartwatch2 from "./assets/Marucha/WhatsApp Unknown 2024-05-14 at 22.47.54/LogoDuBlanc.jpeg";
 
 import Products from "./components/Products/Products";
 import Blogs from "./components/Blogs/Blogs";
@@ -19,23 +19,24 @@ import "aos/dist/aos.css";
 
 const BannerData = {
   discount: "30% OFF",
-  title: "Fine Smile",
-  date: "10 Jan to 28 Jan",
+  title: "Cyber Monday",
+  date: "10 Ene to 28 Ene",
   image: headphone,
-  title2: "Air Solo Bass",
-  title3: "Winter Sale",
+  title2: "Carteras",
+  title3: "Otoño de Ofertas",
   title4:
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
-  bgColor: "#f42c37",
+  // bgColor: "#f42c37",
+  bgColor: "#575757",
 };
 
 const BannerData2 = {
   discount: "30% OFF",
   title: "Happy Hours",
-  date: "14 Jan to 28 Jan",
+  date: "14 Feb to 28 Feb",
   image: smartwatch2,
-  title2: "Smart Solo",
-  title3: "Winter Sale",
+  title2: "El relos de la Mariana",
+  title3: "Promocion de Invierno",
   title4:
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
   bgColor: "#2dcc6f",
