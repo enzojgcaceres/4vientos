@@ -9,8 +9,8 @@ import Img3 from "../../assets/Marucha/WhatsApp Unknown 2024-05-14 at 22.47.54/W
 import Img4 from "../../assets/Marucha/WhatsApp Unknown 2024-05-14 at 22.47.54/WhatsApp Image 2024-05-14 at 09.49.24 (2).jpeg";
 import Img5 from "../../assets/Marucha/WhatsApp Unknown 2024-05-14 at 22.47.54/WhatsApp Image 2024-05-14 at 09.49.24.jpeg";
 import Img6 from "../../assets/Marucha/WhatsApp Unknown 2024-05-14 at 22.47.54/WhatsApp Image 2024-05-14 at 09.49.24 (2).jpeg";
-import Img7 from "../../assets/product/p-9.jpg";
-import Img8 from "../../assets/product/p-1.jpg";
+import Img7 from "../../assets/Marucha/WhatsApp Unknown 2024-05-14 at 22.47.54/WhatsApp Image 2024-05-14 at 09.49.26.jpeg";
+import Img8 from "../../assets/Marucha/WhatsApp Unknown 2024-05-14 at 22.47.54/WhatsApp Image 2024-05-14 at 09.48.21.jpeg";
 
 const ProductsData = [
     {
