@@ -1,6 +1,9 @@
 import React from 'react'
 import Heading from '../Shared/Heading'
 import ProductCard from './ProductCard'
+import Popup from "../Popup/Popup";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 //images import
 import Img1 from "../../assets/Marucha/WhatsApp Unknown 2024-05-14 at 22.47.54/WhatsApp Image 2024-05-14 at 09.48.21.jpeg";
@@ -16,28 +19,28 @@ const ProductsData = [
     {
         id: 1,
         img: Img1,
-        title: "Boat Headphone",
+        title: "Cartuchera",
         price: "$120",
         aosDelay: "0",
     },
     {
         id: 2,
         img: Img2,
-        title: "Rock Mountain",
+        title: "Cartuchera XL",
         price: "$420",
         aosDelay: "200",
     },
     {
         id: 3,
         img: Img3,
-        title: "Goggles",
+        title: "Bowie Cartuchera",
         price: "$320",
         aosDelay: "400",
     },
     {
         id: 4,
         img: Img4,
-        title: "Printed",
+        title: "Yerbera",
         price: "$220",
         aosDelay: "600",
     },
@@ -46,21 +49,21 @@ const ProductsData2 = [
     {
         id: 5,
         img: Img5,
-        title: "Boat Headphone",
+        title: "Cartuchera",
         price: "$120",
         aosDelay: "0",
     },
     {
         id: 6,
         img: Img6,
-        title: "Rock Mountain",
+        title: "boogie",
         price: "$420",
         aosDelay: "200",
     },
     {
         id: 7,
         img: Img7,
-        title: "Goggles",
+        title: "Boogie 2",
         price: "$320",
         aosDelay: "400",
     },
@@ -72,6 +75,14 @@ const ProductsData2 = [
         aosDelay: "600",
     },
 ]
+
+const Products = () => {
+    const [orderPopup, setOrderPopup] = React.useState(false);
+  
+    const handleOrderPopup = () => {
+      setOrderPopup(!orderPopup);
+    };
+  
 
 const Products = () => {
   return (

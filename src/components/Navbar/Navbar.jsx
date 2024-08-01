@@ -17,7 +17,7 @@ const MenuLinks = [
     {
         id: 2,
         name: "Tienda",
-        link: "/#shop",
+        link: "/products",
     },
     {
         id: 3,
@@ -35,17 +35,17 @@ const DropdownLinks = [
     {
         id: 1,
         name: "Productos en tendencia",
-        link: "/#",
+        link: "/products",
     },
     {
         id: 2,
         name: "Los + vendidos",
-        link: "/#",
+        link: "/products",
     },
     {
         id: 3,
         name: "Los mejores calificados",
-        link: "/#",
+        link: "/products",
     }
 ]
 
