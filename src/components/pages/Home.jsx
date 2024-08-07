@@ -11,15 +11,16 @@ import smartwatch2 from "../../assets/Marucha/WhatsApp Unknown 2024-05-14 at 22.
 
 const BannerData = {
     discount: "30% OFF",
-    title: "Cyber Monday",
+    title: "Ofertas",
     date: "10 Ene to 28 Ene",
     image: headphone,
     title2: "Carteras",
-    title3: "Otoño de Ofertas",
+    title3: "Temporada Invierno ",
     title4:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
     // bgColor: "#f42c37",
     bgColor: "#575757",
+    link: "/products",
   };
 
   const BannerData2 = {

@@ -10,8 +10,8 @@ const ServiceData = [
     {
         id: 1,
         icon: <FaCarSide className='text-4xl md:text-5xl text-primary' />,
-        title: "Envio gratis",
-        description: "Free Shipping on all Order",
+        title: "Envios a todo el pais",
+        description: "Con cualquier pedido",
     }, 
     {
         id: 2,
@@ -24,13 +24,13 @@ const ServiceData = [
         id: 3,
         icon: <FaWallet className='text-4xl md:text-5xl text-primary' />,
         title: "Pagos seguros",
-        description: "Todos los pagos seguros",
+        description: "Todos los medios de pago",
     },
     {
         id: 4,
         icon: <FaHeadphonesAlt className='text-4xl md:text-5xl text-primary' />,
         title: "24/7 Support",
-        description: "Free Shipping on all Order",
+        description: "Atencion al cliente",
     }
 ]
 

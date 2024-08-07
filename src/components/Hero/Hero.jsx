@@ -1,8 +1,8 @@
 import React from 'react'
 import Slider from "react-slick";
 import Image1 from "../../assets/Marucha/WhatsApp Unknown 2024-05-14 at 22.47.54/WhatsApp Image 2024-05-14 at 09.48.21.jpeg";
-import Image2 from "../../assets/category/vr.png";
-import Image3 from "../../assets/category/macbook.png";
+import Image2 from "../../assets/Marucha/drive-download-20240801T144433Z-001/Cart Meditacion.png";
+import Image3 from "../../assets/Marucha/drive-download-20240801T144433Z-001/Gatitos tk2.png";
 import Button from '../Shared/Button';
 
 
@@ -19,16 +19,16 @@ const HeroData = [
         id: 2,
         img: Image2,
         subtitle: "Eh Gato!",
-        title: "Zombie XXL",
-        title2: "Marucha",
+        title: "Meditacion",
+        title2: "Yerbera",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
         id: 3,
         img: Image3,
-        subtitle: "Alta compu",
-        title: "Macbook Air",
-        title2: "Apple",
+        subtitle: "Bolso",
+        title: "Gatitos",
+        title2: "Tela",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     }
 ]
