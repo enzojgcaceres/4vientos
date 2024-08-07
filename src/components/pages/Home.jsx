@@ -38,8 +38,8 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <Category />
-      <Category2 />
+      {/* <Category />
+      <Category2 /> */}
       <Services />
       <Banner data={BannerData} />
       <Partners />

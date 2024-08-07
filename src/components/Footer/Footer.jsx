@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { FaFacebook, FaInstagram, FaLinkedin, FaLocationArrow } from 'react-icons/fa6';
 import { FaMobileAlt } from "react-icons/fa";
 
@@ -24,15 +25,15 @@ const FooterLinks = [
 const FooterLinks2 = [
     {
         title: 'Premiados',
-        link: "#",
+        link: "/products",
     },
     {
         title: 'Mensajes',
-        link: "#",
+        link: "/products",
     },
     {
         title: 'Reseñas',
-        link: "#contact",
+        link: "/products",
     },
     {
         title: 'Blog2',
@@ -52,11 +53,11 @@ const Footer = () => {
                        Acà encontraras todos los productos en Stock
                     </p>
                     <p className='text-gray-500 mt-4'>
-                        Hecho con ❤ por EnzoDev 2024
+                        Hecho con ❤ por EnzoCode + 2024
                     </p>
 
                     <a 
-                        href='https://github.com/EnzoDev-Dev'
+                        href='https://github.com/enzojgcaceres'
                         target='_blank'
                         className='inline-block bg-primary/90 text-white py-2 px-4 mt-4 text-sm rounded-full'
                     >Visita mi GitHub</a>
@@ -97,19 +98,19 @@ const Footer = () => {
                             <div>
                                 <div className='flex items-center gap-3'>
                                 <FaLocationArrow />
-                                <p>Calle flash 123</p>
+                                <p>Parque Avellaneda - CABA</p>
                             </div>
                             <div className='flex items-center gap-3 mt-6'>
                                 <FaMobileAlt />
-                                <p>123-456-7890</p>
+                                <p>+ 54 11 5947 1360</p>
                             </div>    
 
                             {/* social links */}
                             <div className='flex items-center gap-3 mt-6' >
-                            <a href='#'>
+                            <a href='https://www.instagram.com/4vientxs?igsh=ZGVqZDk1b2QwY3M0'>
                             <FaInstagram className='text-3xl text-gray-600 hover:text-black duration-300' />   
                             </a>
-                            <a href='#'>
+                            <a href='https://www.instagram.com/4vientxs?igsh=ZGVqZDk1b2QwY3M0'>
                             <FaFacebook className='text-3xl text-gray-600 hover:text-black duration-300' />   
                             </a>
                             <a href='#'>

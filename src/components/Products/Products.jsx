@@ -7,13 +7,13 @@ import "aos/dist/aos.css";
 
 //images import
 import Img1 from "../../assets/Marucha/WhatsApp Unknown 2024-05-14 at 22.47.54/WhatsApp Image 2024-05-14 at 09.48.21.jpeg";
-import Img2 from "../../assets/Marucha/WhatsApp Unknown 2024-05-14 at 22.47.54/WhatsApp Image 2024-05-14 at 09.48.22.jpeg";
+import Img2 from "../../assets/Marucha/drive-download-20240801T144433Z-001/Bolsa Charly.png";
 import Img3 from "../../assets/Marucha/WhatsApp Unknown 2024-05-14 at 22.47.54/WhatsApp Image 2024-05-14 at 09.49.24 (1).jpeg";    
 import Img4 from "../../assets/Marucha/WhatsApp Unknown 2024-05-14 at 22.47.54/WhatsApp Image 2024-05-14 at 09.49.24 (2).jpeg";
-import Img5 from "../../assets/Marucha/WhatsApp Unknown 2024-05-14 at 22.47.54/WhatsApp Image 2024-05-14 at 09.49.24.jpeg";
-import Img6 from "../../assets/Marucha/WhatsApp Unknown 2024-05-14 at 22.47.54/WhatsApp Image 2024-05-14 at 09.49.24 (2).jpeg";
-import Img7 from "../../assets/Marucha/WhatsApp Unknown 2024-05-14 at 22.47.54/WhatsApp Image 2024-05-14 at 09.49.26.jpeg";
-import Img8 from "../../assets/Marucha/WhatsApp Unknown 2024-05-14 at 22.47.54/WhatsApp Image 2024-05-14 at 09.48.21.jpeg";
+import Img5 from "../../assets/Marucha/drive-download-20240801T144433Z-001/Charly Munch.png";
+import Img6 from "../../assets/Marucha/drive-download-20240801T144433Z-001/Cart Meditacion.png";
+import Img7 from "../../assets/Marucha/drive-download-20240801T144433Z-001/Gatitos Bolsa tk1.png";
+import Img8 from "../../assets/Marucha/drive-download-20240801T144433Z-001/Almendra.png";
 
 const ProductsData = [
     {
@@ -26,7 +26,7 @@ const ProductsData = [
     {
         id: 2,
         img: Img2,
-        title: "Cartuchera XL",
+        title: "Charly bolsa de tela",
         price: "$420",
         aosDelay: "200",
     },
@@ -76,23 +76,33 @@ const ProductsData2 = [
     },
 ]
 
-const Products = () => {
-    const [orderPopup, setOrderPopup] = React.useState(false);
+const Products = ( {  handleOrderPopup, orderPopup } ) => {
+    // const [orderPopup, setOrderPopup] = React.useState(false);
   
-    const handleOrderPopup = () => {
-      setOrderPopup(!orderPopup);
-    };
+    // const handleOrderPopup = () => {
+    //   setOrderPopup(!orderPopup);
+    // };
   
+    React.useEffect(() => {
+        AOS.init({
+          duration: 800,
+          easing: "ease-in-sine",
+          delay: 100,
+          offset: 100,
+        });
+        AOS.refresh();
+      }, []);
 
-const Products = () => {
+
   return (
     <div>
         <div className='container'>
             {/* header */}
             <Heading title="Nuestros Productos" subtitle={"Explora nuestros productos"} />
             {/* body */}
-            <ProductCard data={ProductsData} /> 
-            <ProductCard data={ProductsData2} />
+            <ProductCard data={ProductsData}  handleOrderPopup={handleOrderPopup} orderPopup={orderPopup} /> 
+            <ProductCard data={ProductsData2}  handleOrderPopup={handleOrderPopup} orderPopup={orderPopup} />
+            <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />
         </div>
     </div>
   )

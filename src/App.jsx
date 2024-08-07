@@ -64,12 +64,13 @@ const App = () => {
   return (
     <Router>
       <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden">
-        <Navbar />
+        <Navbar handleOrderPopup={handleOrderPopup} />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/products/*" element={<Products />} />
+          <Route path="/products/*" element={<Products handleOrderPopup={handleOrderPopup} orderPopup={orderPopup}/>} />
           <Route path="/blogs/*" element={<Blogs />} />
         </Routes>
+        <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />
         <Footer />
       </div>
     </Router>
